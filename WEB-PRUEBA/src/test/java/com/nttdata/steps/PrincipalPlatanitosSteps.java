@@ -53,16 +53,17 @@ public class PrincipalPlatanitosSteps {
     public void agregarAlCarrito() {
         WebElement agregarCarrito = driver.findElement(HomePage.agregarCarrito);
         agregarCarrito.click();
-    }
-
-    public void carritoCompras() {
-        WebElement carritoCompras = driver.findElement(HomePage.carrito);
-        carritoCompras.click();
+        
         try {
             Thread.sleep(2000);
         }catch (Exception e){
 
         }
+    }
+
+    public void carritoCompras() {
+        WebElement carritoCompras = driver.findElement(HomePage.carrito);
+        carritoCompras.click();
     }
 
     public String getProductName() {
